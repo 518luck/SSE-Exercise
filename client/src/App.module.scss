@@ -1,0 +1,68 @@
+.chatContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #292a2d;
+  .headTitle {
+    margin-bottom: 10px;
+    color: aliceblue;
+    position: relative;
+    img {
+      top: 0;
+      right: 430px;
+      position: absolute;
+    }
+    div {
+      text-align: center;
+      font-size: 25px;
+      margin-bottom: 23px;
+    }
+    span {
+      display: block;
+      margin-bottom: 23px;
+    }
+  }
+  .contextFocus {
+    box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.7);
+  }
+  .context {
+    width: 63%;
+    height: 17vh;
+    border-radius: 20px;
+    background-color: #404045;
+    padding: 10px;
+    position: relative;
+    .TextArea {
+      width: 100%;
+      height: 100%;
+      background: #404045;
+      overflow: hidden;
+      resize: none;
+      border: none;
+      box-shadow: none;
+      caret-color: #fff;
+      color: #fff;
+      &:hover {
+        border: none;
+        box-shadow: none;
+      }
+      &::placeholder {
+        font-size: 16px;
+        color: #999aa5;
+      }
+    }
+    .SendOutlined {
+      position: absolute;
+      right: 30px;
+      bottom: 20px;
+      color: #ed701a;
+      transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+      &:active {
+        transform: scale(1.5);
+      }
+    }
+  }
+}
